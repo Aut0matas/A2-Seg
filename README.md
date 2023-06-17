@@ -10,7 +10,7 @@
 
 ### **Dataset**
 
-- [ISBI International Skin Imaging Collaboration (ISIC) 2017 challenge, Part I Lesion Segmentation](https://challenge.kitware.com/#challenge/n/ISIC_2017%3A_Skin_Lesion_Analysis_Towards_Melanoma_Detection)
+- [ISBI International Skin Imaging Collaboration (ISIC) 2017 challenge, Part I Lesion Segmentation](https://challenge.isic-archive.com/data/#2017)
 
 ### **Project Structure**
 
