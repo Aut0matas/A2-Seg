@@ -22,7 +22,7 @@
 
 ### **Model Structure**
 
-[model](Images\A2-Seg.svg)
+![**](Images\A2-Seg.svg)
 
 ### **References**
 
