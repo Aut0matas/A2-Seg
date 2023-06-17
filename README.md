@@ -1,6 +1,5 @@
 ### A²Seg: ***A***dversarial ***Seg***mentation with ***A***ttention-Unet
 
-
 ### Dependencies
 
 * python 3.11  (below should be fine)
@@ -20,6 +19,10 @@
 | segmentor.py  | Model that predict segmentation masks, based on[Attention U-net](https://github.com/LeeJunHyun/Image_Segmentation) |
 | critic.py     | Model that takes masked images to produce multi-scale feature map                                              |
 | train.py      | (as it says)                                                                                                    |
+
+### **Model Structure**
+
+![1687022387504](image/README/1687022387504.png)
 
 ### **References**
 
