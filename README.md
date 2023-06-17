@@ -1,6 +1,6 @@
 # A2-Seg
 
- Adversarial Segmentation with Attention-Unet
+ ***A***dversarial ***Seg***mentation with ***A***ttention-Unet
 
 ### Dependencies
 
