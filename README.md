@@ -1,4 +1,4 @@
-# A2-Seg
+# A²Seg
 
  ***A***dversarial ***Seg***mentation with ***A***ttention-Unet
 
