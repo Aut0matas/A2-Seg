@@ -18,7 +18,7 @@
 | ------------- | ------------------------------------------------------------------ |
 | dataLoader.py | (as it says)                                                       |
 | transform.py  | Functions for data augmentation                                    |
-| segmentor.py  | Model that predict segmentation masks, based on Attention U-net    |
+| segmentor.py  | Model that predict segmentation masks, based on [Attention U-net](https://github.com/LeeJunHyun/Image_Segmentation)    |
 | critic.py     | Model that takes masked images to produce multi-scale feature map |
 | train.py      | (as it says)                                                       |
 
