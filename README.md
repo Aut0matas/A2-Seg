@@ -4,8 +4,9 @@
 
 ### Dependencies
 
-* python 3.11
-* Pytorch 2.0
+* python 3.11  (below should be fine)
+* Pytorch 2.0  (below should be fine)
+* CUDA
 
 ### **Dataset**
 
