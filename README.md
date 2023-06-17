@@ -2,7 +2,6 @@
 
  Adversarial Segmentation with Attention-Unet
 
-
 ### Dependencies
 
 * python 3.11
@@ -11,6 +10,16 @@
 ### **Dataset**
 
 - [ISBI International Skin Imaging Collaboration (ISIC) 2017 challenge, Part I Lesion Segmentation](https://challenge.kitware.com/#challenge/n/ISIC_2017%3A_Skin_Lesion_Analysis_Towards_Melanoma_Detection)
+
+### **Project Structure**
+
+| File          | Description                                                        |
+| ------------- | ------------------------------------------------------------------ |
+| dataLoader.py | (as it says)                                                       |
+| transform.py  | Functions for data augmentation                                    |
+| segmentor.py  | Model that predict segmentation masks, based on Attention U-net    |
+| critic.py     | Model that takes masked images to produce multi-scale feature map |
+| train.py      | (as it says)                                                       |
 
 ### **References**
 
