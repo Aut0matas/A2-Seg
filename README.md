@@ -22,7 +22,7 @@
 
 ### **Model Structure**
 
-![1687022387504](image/README/1687022387504.png)
+![](Images\A2-Seg.svg)
 
 ### **References**
 
