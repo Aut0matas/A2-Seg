@@ -182,17 +182,17 @@ for epoch in range(opt.niter):
 
     print(
         "===> Epoch[{}]({}/{}): Batch Dice: {:.4f}".format(
-            epoch, i, len(dataloader), 1 - loss_dice.data[0]
+            epoch, i, len(dataloader), 1 - loss_dice.item()
         )
     )
     print(
         "===> Epoch[{}]({}/{}): G_Loss: {:.4f}".format(
-            epoch, i, len(dataloader), loss_G.data[0]
+            epoch, i, len(dataloader), loss_G.item()
         )
     )
     print(
         "===> Epoch[{}]({}/{}): D_Loss: {:.4f}".format(
-            epoch, i, len(dataloader), loss_D.data[0]
+            epoch, i, len(dataloader), loss_D.item()
         )
     )
     vutils.save_image(data[0], "%s/input.png" % opt.outpath, normalize=True)
