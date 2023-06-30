@@ -131,13 +131,17 @@ for epoch in range(opt.niter):
 
         # 将原图与mask逐元素相乘，得到只有病灶的图像
         for d in range(3):
-            output_masked[:, d, :, :] = input_mask[:, d, :, :].unsqueeze(1) * output
+            output_masked[:, d, :, :] = (
+                input_mask[:, d, :, :].unsqueeze(1) * output
+            ).squeeze(1)
         if cuda:
             output_masked = output_masked.cuda()
         result = NetC(output_masked)
         target_masked = input.clone()
         for d in range(3):
-            target_masked[:, d, :, :] = input_mask[:, d, :, :].unsqueeze(1) * target
+            target_masked[:, d, :, :] = (
+                input_mask[:, d, :, :].unsqueeze(1) * target
+            ).squeeze(1)
         if cuda:
             target_masked = target_masked.cuda()
         target_D = NetC(target_masked)
@@ -155,12 +159,16 @@ for epoch in range(opt.niter):
         output = F.sigmoid(output)
 
         for d in range(3):
-            output_masked[:, d, :, :] = input_mask[:, d, :, :].unsqueeze(1) * output
+            output_masked[:, d, :, :] = (
+                input_mask[:, d, :, :].unsqueeze(1) * output
+            ).squeeze(1)
         if cuda:
             output_masked = output_masked.cuda()
         result = NetC(output_masked)
         for d in range(3):
-            target_masked[:, d, :, :] = input_mask[:, d, :, :].unsqueeze(1) * target
+            target_masked[:, d, :, :] = (
+                input_mask[:, d, :, :].unsqueeze(1) * target
+            ).squeeze(1)
         if cuda:
             target_masked = target_masked.cuda()
         target_G = NetC(target_masked)
