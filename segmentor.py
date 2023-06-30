@@ -127,6 +127,6 @@ class NetS(nn.Module):
 
         # head
         d1 = self.Conv_1x1(d2)
-        d1 = torch.sigmoid(d1)
+        # d1 = torch.sigmoid(d1)
 
         return d1
