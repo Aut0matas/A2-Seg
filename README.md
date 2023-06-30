@@ -30,4 +30,4 @@
 
 ### **References**
 
-- The code of this project is derived from [SegAN](https://github.com/YuanXue1993/SegAN) ([Yuan Xue, et al., 2018](https://arxiv.org/abs/1706.01805)), sincere respects to their work and briliant ideas.
+- The code of this project is greatly inspired by [SegAN](https://github.com/YuanXue1993/SegAN) ([Yuan Xue, et al., 2018](https://arxiv.org/abs/1706.01805)), sincere respects to their work and briliant ideas.
