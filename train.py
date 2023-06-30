@@ -21,7 +21,7 @@ parser.add_argument(
     "--niter", type=int, default=10000, help="number of epochs to train for"
 )
 parser.add_argument(
-    "--lr", type=float, default=0.0002, help="Learning Rate. Default=0.02"
+    "--lr", type=float, default=0.002, help="Learning Rate. Default=0.02"
 )
 
 parser.add_argument(
