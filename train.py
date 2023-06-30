@@ -233,6 +233,7 @@ for epoch in range(opt.niter):
         vutils.save_image(pred.data, "%s/result_val.png" % opt.outpath, normalize=True)
     if epoch % 25 == 0:
         lr = lr * decay
+        k = k * 0.3
         if lr <= 0.00000001:
             lr = 0.00000001
         print("Learning Rate: {:.6f}".format(lr))
