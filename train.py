@@ -146,7 +146,7 @@ if __name__ == "__main__":
             if cuda:
                 target_masked = target_masked.cuda()
             target_D = NetC(target_masked)
-            loss_D = -torch.mean(torch.abs(result - target_D))
+            loss_D = -torch.mean(torch.square(result - target_D))
             loss_D.backward()
             optimizerD.step()
 
@@ -176,8 +176,8 @@ if __name__ == "__main__":
 
             # 计算损失
             loss_dice = dice_loss(output, target)
-            loss_G = torch.mean(torch.abs(result - target_G))
-            loss_G_joint = torch.mean(torch.abs(result - target_G)) + loss_dice
+            loss_G = torch.mean(torch.square(result - target_G))
+            loss_G_joint = torch.mean(torch.square(result - target_G)) + loss_dice
             loss_G_joint.backward()
             optimizerG.step()
 
