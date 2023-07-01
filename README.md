@@ -1,4 +1,4 @@
-### A²Seg: ***A***dversarial ***Seg***mentation with ***A***ttention-Unet
+### A²Seg: ***A***dversarial learning with channel-wise ***A***ttention for skin lesion ***Seg***mentation
 
 ### Dependencies
 
@@ -16,8 +16,8 @@
 | ------------- | --------------------------------------------------------------------------------------------------------------- |
 | dataLoader.py | (as it says)                                                                                                    |
 | transform.py  | Functions for data augmentation                                                                                 |
-| segmentor.py  | Model that predict segmentation masks, based on[Attention U-net](https://github.com/LeeJunHyun/Image_Segmentation) |
-| critic.py     | Model that takes masked images to produce multi-scale feature map                                              |
+| segmentor.py  | Model that predict segmentation masks, based on Attention U-net                                                 |
+| critic.py     | Model that takes masked images to produce multi-scale feature map                                               |
 | train.py      | (as it says)                                                                                                    |
 
 ### **Model Structure**
